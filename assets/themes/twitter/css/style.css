@@ -1,8 +1,8 @@
 /* Override some defaults */
 html, body {
-  	font-size: 12px;
-	line-height: 22px;
-	font-family: "ClassicGrotesqueW01-Rg", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-size: 12px;
+  line-height: 22px;
+  font-family: "ClassicGrotesqueW01-Rg", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
     background-color: #f8f8f5;
     color: #5c5c5c;
 }
@@ -18,24 +18,25 @@ body {
 
 /* The white background content wrapper */
 .content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  
 }
 
 /* Page header tweaks */
 .page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
-}
+  margin:25px 0;
+  border-bottom: 0 none;
 
+}
+.page-header h1{
+  color: #000000;
+    font: bold 24px/26px "ClassicGrotesqueW01-SmB 1130040","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei","Microsoft YaHei",SimSun,sans-serif;
+    padding: 2px 0;
+    margin: 0;
+}
+.page-header small{
+  color: #7D7D7D;
+    font: 14px "ClassicGrotesqueW01-Rg",Arial,sans-serif;
+}
 .topbar .btn {
   border: 0;
 }
@@ -44,38 +45,44 @@ body {
 /* tag_box ======================================================== */
 
 .tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
+  list-style:none;
+  margin:0;
+  padding:5px 0 ;
+  overflow:hidden;
 }
 .tag_box li {
-	line-height:28px;
+  line-height:28px;
 }
 .tag_box.inline li {
-	float:left;
+  float:left;
 }
 .tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
-	background: #eee;
-	color:#005F6B;
-	border-radius: 3px;
-	text-decoration:none;
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color:#005F6B;
+  border-radius: 3px;
+  text-decoration:none;
 }
 .tag_box a span{
-	vertical-align:super;
-	font-size:0.8em;
+  vertical-align:super;
+  font-size:0.8em;
 }
 .tag_box a.active {
-	background:#57A957;
-	border:1px solid #4C964D;
-	color:#FFF;
+  background:#57A957;
+  border:1px solid #4C964D;
+  color:#FFF;
 }
 
 /*content*/
-p{
-	text-align: left;
+.article_detail p{
+  font-size: 14px;
+  text-align: left;
     text-indent: 32px;
-    margin:0 15px 15px 0;
+    margin:0 15px 30px 0;
+    line-height: 22px;
+}
+.article small{
+  color: #7D7D7D;
+    font: 14px "ClassicGrotesqueW01-Rg",Arial,sans-serif;
 }
