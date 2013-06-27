@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: 
 tagline: 活泼的生命完全无须借助魔法，便能对我们述说至美至真的故事.
 ---
 
