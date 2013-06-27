@@ -12,6 +12,14 @@
   <div class="span14">
     {{ content }}
     <hr>
+    {% unless page.tags == empty %}
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    {% assign tags_list = page.tags %}
+    {% include JB/tags_list %}
+    </ul>
+  {% endunless %}  
+    
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -32,11 +40,5 @@
     </div>
   </div>
 
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
+  
 
