@@ -5,10 +5,12 @@
   </small>
 </div>
 
-<div class="row">
+<div class="row article">
   <div class="span3">
     <!-- <h4>Published</h4> -->
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    <small>
+      <time pubdate="" datetime="{{ page.date | date_to_long_string }}">{{ page.date | date_to_long_string }}</time>
+    </small>
   </div>
   <div class="span12">
     <div class="article_detail">
