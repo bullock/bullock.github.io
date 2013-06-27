@@ -3,13 +3,11 @@
 </div>
 
 <div class="row">
-  <div class="span4">
-    <h4>Published</h4>
+  <div class="span3">
+    <!-- <h4>Published</h4> -->
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-</div>
-
-<div class="row">
-  <div class="span14">
+  </div>
+  <div class="span12">
     {{ content }}
     <hr>
     {% unless page.tags == empty %}
@@ -19,7 +17,7 @@
     {% include JB/tags_list %}
     </ul>
   {% endunless %}  
-    
+
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -38,6 +36,10 @@
     <hr>
     {% include JB/comments %}
     </div>
+</div>
+
+<div class="row">
+  
   </div>
 
   
