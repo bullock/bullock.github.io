@@ -8,8 +8,10 @@
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
   </div>
   <div class="span12">
+    <div class="article_detail">
     {{ content }}
     <hr>
+    </div>
     {% unless page.tags == empty %}
     <h4>Tags</h4>
     <ul class="tag_box">
@@ -38,9 +40,7 @@
     </div>
 </div>
 
-<div class="row">
-  
-  </div>
+
 
   
 
